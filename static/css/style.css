@@ -112,3 +112,15 @@ footer {
         <a href="contact.html" class="button">Souscrire maintenant</a>
     </p>
 </section>
+.service-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-list li {
+    font-size: 18px;
+    padding: 10px;
+    background: #e0f2f1;
+    margin: 5px 0;
+    border-left: 5px solid #009688;
+}
