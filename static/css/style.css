@@ -8,12 +8,9 @@ body {
 }
 
 /* Style du header */
-header {
-    background: linear-gradient(135deg, #009688, #00695c);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+header h1 {
+    font-size: 36px; /* Augmenter la taille du titre */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre pour améliorer la visibilité */
 }
 
 /* Navigation */
