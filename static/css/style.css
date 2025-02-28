@@ -1,10 +1,8 @@
 body {
     font-family: "Times New Roman", serif;
 }
-header {
-    background-color: #009688;
-    color: white;
-    padding: 20px;
+header h1 {
+    font-size: 28px; /* Réduit la taille, ajuste selon ton besoin */
 }
 
 nav {
