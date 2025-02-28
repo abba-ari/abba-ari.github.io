@@ -75,9 +75,9 @@ h1, h2 {
 footer {
     background: #333;
     color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 25px 0; /* Augmenter le padding */
+    margin-top: 40px;
+    font-size: 16px; /* Taille de police plus petite pour le footer */
 }
 /* Style des offres */
 .pricing-table {
