@@ -111,6 +111,15 @@ footer {
     font-size: 18px;
     font-weight: bold;
 }
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
 </section>
 .service-list {
     list-style-type: none;
