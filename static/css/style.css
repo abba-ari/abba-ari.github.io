@@ -125,9 +125,14 @@ footer {
     border-left: 5px solid #009688;
 }
 /* Section Accueil */
-.welcome-section {
-    text-align: center;
-    padding: 20px;
+.welcome-features .feature-card {
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-features .feature-card:hover {
+    transform: translateY(-10px); /* Légère animation lors du survol */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .welcome-features {
