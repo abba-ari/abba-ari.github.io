@@ -1,8 +1,15 @@
 body {
-    font-family: "Times New Roman", serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
 }
-header h1 {
-    font-size: 28px; /* Réduit la taille, ajuste selon ton besoin */
+
+header {
+    background-color: #009688;
+    color: white;
+    padding: 20px;
 }
 
 nav {
@@ -25,23 +32,4 @@ footer {
     color: white;
     padding: 10px;
     margin-top: 20px;
-}
-.contact {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.contact p {
-    font-size: 18px;
-    margin: 8px 0;
-}
-
-.contact a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.contact a:hover {
-    color: #0056b3;
 }
