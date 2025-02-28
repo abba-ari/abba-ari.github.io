@@ -81,36 +81,38 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
-<section>
-    <h1>🌐 Abba Ari.net - Tarifs de Connexion WiFi 🚀</h1>
-    <p>Profitez d’un WiFi rapide et fiable avec des offres adaptées à vos besoins :</p>
-    
-    <div class="pricing-table">
-        <div class="pricing-card">
-            <h2>1 Heure</h2>
-            <p>500N</p>
-        </div>
-        <div class="pricing-card">
-            <h2>3 Heures</h2>
-            <p>1000N</p>
-        </div>
-        <div class="pricing-card">
-            <h2>1 Jour</h2>
-            <p>1500N</p>
-        </div>
-        <div class="pricing-card">
-            <h2>1 Semaine</h2>
-            <p>5000N</p>
-        </div>
-        <div class="pricing-card">
-            <h2>1 Mois</h2>
-            <p>20000N</p>
-        </div>
-    </div>
+/* Style des offres */
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
-    <p style="text-align: center;">
-        <a href="contact.html" class="button">Souscrire maintenant</a>
-    </p>
+.pricing-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card h2 {
+    color: #009688;
+    font-size: 20px;
+}
+
+.pricing-card p {
+    font-size: 18px;
+    font-weight: bold;
+}
 </section>
 .service-list {
     list-style-type: none;
