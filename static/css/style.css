@@ -205,3 +205,9 @@ footer {
 .contact-card a:hover {
     color: #0056b3;
 }
+h1 {
+    font-size: 28px; /* Ajuste la taille si besoin */
+    color: white; /* Assure-toi que le texte est bien visible */
+    text-align: center;
+    font-weight: bold;
+}
