@@ -32,7 +32,8 @@ nav a {
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2); /* Fond plus foncé sur hover */
+    color: #fff; /* Changer la couleur du texte pour contraster avec l'arrière-plan */
 }
 
 /* Style des sections */
