@@ -172,3 +172,10 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
+/* Rendre le site plus beau sur mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
