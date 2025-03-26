@@ -116,5 +116,15 @@ footer {
     .feature-card {
         width: 90%;
         margin: 10px auto;
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
     }
 }
