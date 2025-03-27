@@ -279,3 +279,19 @@ border-radius: 5px;
     border-radius: 5px;
     font-size: 18px;
 }
+.button-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button-floating:hover {
+    background: #1ebe57;
+}
