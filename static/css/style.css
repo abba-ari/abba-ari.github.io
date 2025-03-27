@@ -121,3 +121,12 @@ font-weight: bold;
         transform: translateY(0);
     }
 }
+.btn-primary, .btn-nav {
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-primary:hover, .btn-nav:hover {
+    background: #ffcc00;
+    color: #333;
+    transform: scale(1.05);
+}
