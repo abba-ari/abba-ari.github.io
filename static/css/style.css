@@ -101,3 +101,23 @@ font-weight: bold;
         display: block;
     }
 }
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        background: #007bff;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        z-index: 1000;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+}
