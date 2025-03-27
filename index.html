@@ -9,38 +9,30 @@
     <!-- Meta SEO -->
     <meta name="description" content="Profitez d'une connexion Internet rapide et fiable grâce à Starlink à N'guigmi et ses environs.">
     
-    <!-- Open Graph (pour partage réseaux sociaux) -->
-    <meta property="og:title" content="Abba Ari.net - Connexion Internet Rapide">
-    <meta property="og:description" content="Internet stable et rapide avec Starlink à N'guigmi et aux alentours.">
-    <meta property="og:image" content="/static/images/starlink-banner.jpg">
-    <meta property="og:url" content="https://abba-ari.github.io/">
-<!-- Favicon -->
-    <link rel="icon" type="image/png" href="/static/images/favicon.png">
-    
     <!-- Lien CSS -->
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
     <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <div class="logo">Abba Ari<span>.NET</span></div>
+            <div class="logo">Abba Ari.net</div>
             <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="tarifs.html">Tarifs</a></li>
                 <li><a href="contact.html" class="btn-nav">Contact</a></li>
             </ul>
-            <div class="menu-toggle">&#9776;</div> <!-- Icône burger -->
+            <div class="menu-toggle">&#9776;</div> <!-- Icône menu burger -->
         </nav>
     </header>
 
     <!-- Section Hero -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Connexion Internet Ultra-Rapide avec Starlink</h1>
-            <p>Obtenez un accès Internet stable et performant où que vous soyez à N'guigmi et dans les environs.</p>
+<div class="hero-content">
+            <h1>Connexion Internet Ultra-Rapide</h1>
+            <p>Internet stable et performant pour N'guigmi et ses environs.</p>
             <a href="contact.html" class="btn-primary">Souscrire Maintenant</a>
         </div>
     </section>
@@ -49,7 +41,7 @@
     <section class="features">
         <h2>Pourquoi Choisir Abba Ari.net ?</h2>
         <div class="features-container">
-<div class="feature">
+            <div class="feature">
                 <h3>⚡ Ultra-Rapide</h3>
                 <p>Profitez d’une connexion à haute vitesse pour tous vos besoins.</p>
             </div>
@@ -71,8 +63,13 @@
 
     <!-- Script pour le menu mobile -->
     <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
         });
     </script>
 
