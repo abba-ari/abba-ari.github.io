@@ -5,6 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    margin-top: 70px; /* Correction pour éviter que la navbar cache le contenu */
 }
 
 /* ====== Navigation ====== */
@@ -31,7 +32,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+font-weight: bold;
 }
 
 .nav-links a:hover {
@@ -55,7 +56,7 @@ body {
 
 .features-container {
     display: flex;
-justify-content: center;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -69,13 +70,15 @@ justify-content: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ====== Menu Mobile ====== */
+/* ====== Menu Mobile (Burger) ====== */
 .menu-toggle {
     font-size: 28px;
-    display: none;
     cursor: pointer;
+    display: none;
+    color: white;
 }
 
+/* Style du menu mobile */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -83,10 +86,15 @@ justify-content: center;
         background: #007bff;
         text-align: center;
         padding: 10px 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        z-index: 1000;
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex; /* Afficher le menu quand on clique */
     }
 
     .menu-toggle {
