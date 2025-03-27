@@ -295,3 +295,8 @@ font-weight: bold;
 .button-floating:hover {
     background: #1ebe57;
 }
+.nav-links.active {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px;
+    border-radius: 5px;
+}
