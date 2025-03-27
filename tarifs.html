@@ -4,51 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Tarifs - Abba Ari.net</title>
+
+    <!-- Meta Description (SEO) -->
+    <meta name="description" content="Découvrez les tarifs d'Abba Ari.net pour une connexion rapide et fiable via Starlink.">
+    
+    <!-- Lien CSS -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
+
+    <!-- Navigation -->
     <header>
-        <h1>Abba Ari.net</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="services.html">Services</a>
-            <a href="tarifs.html">Tarifs</a>
-            <a href="contact.html">Contact</a>
+        <nav class="navbar">
+            <div class="logo">Abba Ari.net</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+<li><a href="tarifs.html" class="btn-nav active">Tarifs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div> <!-- Icône menu burger -->
         </nav>
     </header>
-    <main>
-    <section>
-    <h1>🌐 Abba Ari.net - Tarifs de Connexion WiFi 🚀</h1>
-<p>Profitez d’un WiFi rapide et fiable avec des offres adaptées à vos besoins :</p>
 
-<div class="pricing-table">
-    <div class="pricing-card">
-        <h2>1 heure</h2>
-        <p>500N</p>
-    </div>
-    <div class="pricing-card">
-        <h2>3 heures</h2>
-        <p>1000N</p>
-    </div>
-    <div class="pricing-card">
-        <h2>1 jour</h2>
-        <p>1500N</p>
-    </div>
-    <div class="pricing-card">
-        <h2>1 semaine</h2>
-        <p>5000N</p>
-    </div>
-    <div class="pricing-card">
-        <h2>1 mois</h2>
-        <p>20000N</p>
-    </div>
+    <!-- Section Hero -->
+    <section class="hero tarifs-hero">
+        <div class="hero-content">
+            <h1>📶 Nos Tarifs WiFi</h1>
+            <p>Des forfaits abordables pour une connexion ultra-rapide !</p>
+        </div>
+    </section>
+
+    <!-- Tableau des Tarifs -->
+    <section class="pricing-container">
+        <h2>🌐 Abba Ari.net - Tarifs de Connexion 🚀</h2>
+        <p>Profitez d’un WiFi rapide et fiable avec des offres adaptées à vos besoins :</p>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>⏳ 1 heure</h3>
+                <p class="price">500N</p>
+            </div>
+            <div class="pricing-card">
+                <h3>⏳ 3 heures</h3>
+                <p class="price">1000N</p>
+            </div>
+            <div class="pricing-card">
+                <h3>📆 1 jour</h3>
+                <p class="price">1500N</p>
+            </div>
+            <div class="pricing-card">
+                <h3>📅 1 semaine</h3>
+                <p class="price">5000N</p>
 </div>
+            <div class="pricing-card">
+                <h3>📆 1 mois</h3>
+                <p class="price">20000N</p>
+            </div>
+        </div>
 
-<p>🔗 Inscrivez-vous maintenant et restez connectés !</p>
-</section>
-</main>
+        <!-- Bouton pour s'inscrire -->
+        <div class="subscribe-btn">
+            <a href="contact.html" class="btn-primary">🔗 Souscrire Maintenant</a>
+        </div>
+    </section>
+
+    <!-- Bouton Retour Accueil -->
+    <div class="back-home">
+        <a href="index.html" class="btn-primary">⬅ Retour à l'accueil</a>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Abba Ari.net - Tous droits réservés.</p>
     </footer>
+
+    <!-- Script Menu Mobile -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            // Fermer le menu quand on clique sur un lien (mobile)
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+});
+    </script>
+
 </body>
 </html>
