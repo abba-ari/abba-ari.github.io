@@ -11,160 +11,6 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-align-items: center;
-    padding: 15px 5%;
-    background: #007bff;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.navbar .logo span {
-    color: #ffcc00;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffcc00;
-}
-
-.btn-nav {
-    background: #ffcc00;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-/* ====== Menu Burger (Mobile) ====== */
-.menu-toggle {
-    font-size: 28px;
-    display: none;
-    cursor: pointer;
-}
-
-/* ====== Section Hero ====== */
-.hero {
-    background: url('/static/images/starlink-banner.jpg') center/cover;
-    color: white;
-    text-align: center;
-    padding: 80px 5%;
-    margin-top: 60px;
-}
-
-.hero h1 {
-    font-size: 36px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin: 15px 0;
-}
-
-.btn-primary {
-    background: #ffcc00;
-    color: #333;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-/* ====== Section Avantages ====== */
-.features {
-    text-align: center;
-    padding: 50px 5%;
-}
-.features-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.feature {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    min-width: 200px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* ====== Footer ====== */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* ====== Responsive (Mobile) ====== */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #007bff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .features-container {
-        flex-direction: column;
-    }
-
-    .feature {
-        width: 90%;
-        margin: 10px auto;
-    }
-}
-/* ====== Styles Généraux ====== */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-/* ====== Navigation ====== */
-.navbar {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
     background: #007bff;
@@ -176,11 +22,6 @@ body {
     z-index: 1000;
 }
 
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -195,6 +36,37 @@ body {
 
 .nav-links a:hover {
     color: #ffcc00;
+}
+
+/* ====== Section Hero ====== */
+.hero {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 100px 5%;
+    margin-top: 60px;
+}
+
+/* ====== Section Avantages ====== */
+.features {
+    text-align: center;
+    padding: 50px 5%;
+}
+
+.features-container {
+    display: flex;
+justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* ====== Menu Mobile ====== */
@@ -214,7 +86,7 @@ body {
     }
 
     .nav-links.active {
-display: flex;
+        display: flex;
     }
 
     .menu-toggle {
