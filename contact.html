@@ -4,33 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Abba Ari.net</title>
+
+    <!-- Meta Description (SEO) -->
+    <meta name="description" content="Contactez Abba Ari.net pour toute information sur nos services Internet.">
+    
+    <!-- Lien CSS -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
+
+    <!-- Navigation -->
     <header>
-        <h1>📞 Contactez-nous</h1>
-<p>Besoin d’assistance ou d’informations ? Contactez-nous via les moyens suivants :</p>
+        <nav class="navbar">
+            <div class="logo">Abba Ari.net</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+<li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html" class="btn-nav active">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div> <!-- Icône menu burger -->
+        </nav>
+    </header>
 
-<div class="contact-section">
-    <div class="contact-card">
-        <h2>📧 E-mail</h2>
-        <p><a href="mailto:abbaariabbakaka@gmail.com">abbaariabbakaka@gmail.com</a></p>
-    </div>
-    <div class="contact-card">
-        <h2>📞 Téléphone</h2>
-        <p><a href="tel:+22799570912">+227 99 57 09 12</a></p>
-    </div>
-    <div class="contact-card">
-        <h2>💬 WhatsApp</h2>
-        <p><a href="https://wa.me/22799570912">+227 99 57 09 12</a></p>
-    </div>
-    <div class="contact-card">
-        <h2>🌐 Facebook</h2>
-        <p><a href="https://www.facebook.com/share/1DSyY6q73f/?mibextid=qi2Omg" target="_blank">Notre page Facebook</a></p>
-    </div>
-</div>
+    <!-- Section Contact -->
+    <section class="hero contact-hero">
+        <div class="hero-content">
+            <h1>📞 Contactez-nous</h1>
+            <p>Besoin d’assistance ou d’informations ? Nous sommes là pour vous aider !</p>
+        </div>
+    </section>
 
+    <section class="contact-container">
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h2>📧 E-mail</h2>
+                <p><a href="mailto:abbaariabbakaka@gmail.com">abbaariabbakaka@gmail.com</a></p>
+            </div>
+            <div class="contact-card">
+                <h2>📞 Téléphone</h2>
+                <p><a href="tel:+22799570912">+227 99 57 09 12</a></p>
+            </div>
+            <div class="contact-card">
+                <h2>💬 WhatsApp</h2>
+                <p><a href="https://wa.me/22799570912" target="_blank">+227 99 57 09 12</a></p>
+            </div>
+            <div class="contact-card">
+                <h2>🌐 Facebook</h2>
+<p><a href="https://www.facebook.com/share/1DSyY6q73f/?mibextid=qi2Omg" target="_blank">Notre page Facebook</a></p>
+            </div>
+        </div>
+
+        <!-- Bouton Retour Accueil -->
+        <div class="back-home">
+            <a href="index.html" class="btn-primary">⬅ Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        © 2025 Abba Ari.net - Tous droits réservés.
+        <p>&copy; 2025 Abba Ari.net - Tous droits réservés.</p>
     </footer>
+
+    <!-- Script Menu Mobile -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            // Fermer le menu quand on clique sur un lien (mobile)
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+
 </body>
+</html>
