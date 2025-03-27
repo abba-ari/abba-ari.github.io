@@ -4,75 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Abba Ari.net - Internet rapide avec Starlink</title>
+    <title>Abba Ari.net - Connexion Internet Rapide</title>
 
-    <!-- Meta description pour le SEO -->
-    <meta name="description" content="Abba Ari.net fournit une connexion Internet rapide et fiable via Starlink à N'guigmi et ses environs. Découvrez nos offres !">
+    <!-- Meta SEO -->
+    <meta name="description" content="Profitez d'une connexion Internet rapide et fiable grâce à Starlink à N'guigmi et ses environs.">
     
-    <!-- Mots-clés pour le référencement -->
-    <meta name="keywords" content="Internet, Starlink, connexion rapide, N'guigmi, fournisseur d'accès Internet">
+    <!-- Open Graph (pour partage réseaux sociaux) -->
+    <meta property="og:title" content="Abba Ari.net - Connexion Internet Rapide">
+    <meta property="og:description" content="Internet stable et rapide avec Starlink à N'guigmi et aux alentours.">
+    <meta property="og:image" content="/static/images/starlink-banner.jpg">
+    <meta property="og:url" content="https://abba-ari.github.io/">
+<!-- Favicon -->
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
     
-    <!-- Open Graph (affichage sur Facebook, WhatsApp, etc.) -->
-    <meta property="og:title" content="Abba Ari.net - Internet rapide avec Starlink">
-    <meta property="og:description" content="Profitez d'une connexion Internet ultra-rapide et fiable via Starlink à N'guigmi et ses environs.">
-    <meta property="og:image" content="static/images/starlink.jpg">
-    <meta property="og:url" content="https://abba-ari.github.io">
-<meta property="og:type" content="website">
-    
-    <!-- Twitter Card (affichage sur Twitter) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Abba Ari.net - Internet rapide avec Starlink">
-    <meta name="twitter:description" content="Profitez d'une connexion Internet ultra-rapide et fiable via Starlink à N'guigmi et ses environs.">
-    <meta name="twitter:image" content="static/images/starlink.jpg">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="static/images/favicon.png">
-    
-    <!-- Lien vers le fichier CSS -->
+    <!-- Lien CSS -->
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 
-    <main>
-        <header>
-            <nav>
-                <a href="index.html">Accueil</a>
-                <a href="services.html">Services</a>
-                <a href="tarifs.html">Tarifs</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <h1>Bienvenue chez Abba Ari.net !</h1>
-            <p>Nous sommes ravis de vous accueillir chez <strong>Abba Ari.net</strong>, votre fournisseur de connexion Internet rapide et fiable via Starlink à N'guigmi et ses environs.</p>
-        </header>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Abba Ari<span>.NET</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div> <!-- Icône burger -->
+        </nav>
+    </header>
 
-        <section class="welcome-section">
-<p>Notre mission est de vous offrir une connexion stable, accessible et performante, où que vous soyez.</p>
-            
-            <div class="welcome-features">
-                <div class="feature-card">
-                    <h2>⚡ Rapidité</h2>
-                    <p>Une connexion haut débit ultra-rapide pour tous vos besoins.</p>
-                </div>
-                <div class="feature-card">
-                    <h2>🌍 Accessibilité</h2>
-                    <p>Disponible à N'guigmi et dans les environs.</p>
-                </div>
-                <div class="feature-card">
-                    <h2>🔒 Fiabilité</h2>
-                    <p>Une connexion stable 24h/24 et 7j/7.</p>
-                </div>
+    <!-- Section Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Connexion Internet Ultra-Rapide avec Starlink</h1>
+            <p>Obtenez un accès Internet stable et performant où que vous soyez à N'guigmi et dans les environs.</p>
+            <a href="contact.html" class="btn-primary">Souscrire Maintenant</a>
+        </div>
+    </section>
+
+    <!-- Section Avantages -->
+    <section class="features">
+        <h2>Pourquoi Choisir Abba Ari.net ?</h2>
+        <div class="features-container">
+<div class="feature">
+                <h3>⚡ Ultra-Rapide</h3>
+                <p>Profitez d’une connexion à haute vitesse pour tous vos besoins.</p>
             </div>
+            <div class="feature">
+                <h3>🌍 Couverture Étendue</h3>
+                <p>Disponible à N'guigmi et dans les zones rurales.</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Fiabilité Maximale</h3>
+                <p>Connexion stable 24h/24 et 7j/7, sans interruptions.</p>
+            </div>
+        </div>
+    </section>
 
-            <p><em>Découvrez nos offres et rejoignez une communauté connectée en toute simplicité !</em></p>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Abba Ari.net - Tous droits réservés.</p>
     </footer>
 
-    <!-- Bouton flottant pour contacter -->
-    <a href="contact.html" class="button-floating">Nous Contacter</a>
+    <!-- Script pour le menu mobile -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
