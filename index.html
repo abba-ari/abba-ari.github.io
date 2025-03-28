@@ -3,13 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Abba Ari.net - Connexion Internet Rapide</title>
-
-    <!-- Meta SEO -->
-    <meta name="description" content="Profitez d'une connexion Internet rapide et fiable grâce à Starlink à N'guigmi et ses environs.">
-    
-    <!-- Lien CSS -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -24,35 +18,16 @@
                 <li><a href="tarifs.html">Tarifs</a></li>
                 <li><a href="contact.html" class="btn-nav">Contact</a></li>
             </ul>
-            <div class="menu-toggle">&#9776;</div> <!-- Icône menu burger -->
+<div class="menu-toggle">&#9776;</div> <!-- Icône menu burger -->
         </nav>
     </header>
 
     <!-- Section Hero -->
     <section class="hero">
-<div class="hero-content">
+        <div class="hero-content">
             <h1>Connexion Internet Ultra-Rapide</h1>
             <p>Internet stable et performant pour N'guigmi et ses environs.</p>
             <a href="contact.html" class="btn-primary">Souscrire Maintenant</a>
-        </div>
-    </section>
-
-    <!-- Section Avantages -->
-    <section class="features">
-        <h2>Pourquoi Choisir Abba Ari.net ?</h2>
-        <div class="features-container">
-            <div class="feature">
-                <h3>⚡ Ultra-Rapide</h3>
-                <p>Profitez d’une connexion à haute vitesse pour tous vos besoins.</p>
-            </div>
-            <div class="feature">
-                <h3>🌍 Couverture Étendue</h3>
-                <p>Disponible à N'guigmi et dans les zones rurales.</p>
-            </div>
-            <div class="feature">
-                <h3>🔒 Fiabilité Maximale</h3>
-                <p>Connexion stable 24h/24 et 7j/7, sans interruptions.</p>
-            </div>
         </div>
     </section>
 
@@ -61,24 +36,6 @@
         <p>&copy; 2025 Abba Ari.net - Tous droits réservés.</p>
     </footer>
 
-    <!-- Script pour le menu mobile -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-            menuToggle.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-            });
-
-            // Fermer le menu quand on clique sur un lien (mobile)
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                });
-            });
-        });
-    </script>
-
+    <script src="static/js/script.js"></script>
 </body>
 </html>
